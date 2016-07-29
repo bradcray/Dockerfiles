@@ -27,3 +27,11 @@ email: ...
 
 $ docker push cyberdojofoundation/NAME
 
+#----------------------------------------------------------------------
+
+TODO: Check there are no extraneous files.
+      Eg C#/SpecFlow/nunit.framework.dll is probably not needed.
+
+TODO: Migrate to Alpine-based images.
+
+TODO: Move images from cyberdojofoundation hub to cyberdojo hub.
