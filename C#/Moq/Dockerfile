@@ -1,4 +1,4 @@
-FROM frolvlad/alpine-mono
+FROM cyberdojofoundation/alpine_mono
 
 COPY packages.config .
 
