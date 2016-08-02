@@ -1,4 +1,4 @@
-FROM       cyberdojofoundation/csharp-2.10.8.1_nunit
+FROM       cyberdojofoundation/csharp_nunit
 MAINTAINER Seb Rose <seb@claysnow.co.uk>
 
 RUN apt-get update && apt-get -y install \
