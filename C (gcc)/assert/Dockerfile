@@ -1,4 +1,4 @@
-FROM cyberdojofoundation/language-base
+FROM cyberdojofoundation/alpine_language_base
 MAINTAINER Jon Jagger <jon@jaggersoft.com>
 
 USER root
