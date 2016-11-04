@@ -1,4 +1,5 @@
-FROM cyberdojofoundation/alpine_mono
+FROM cyberdojofoundation/alpine_mono:edge
+MAINTAINER Jon Jagger <jon@jaggersoft.com>
 
 COPY packages.config .
 

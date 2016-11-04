@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker build -t cyberdojofoundation/alpine_mono  .
+docker build -t cyberdojofoundation/alpine_mono:edge  .

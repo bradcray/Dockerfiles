@@ -1,4 +1,6 @@
-FROM cyberdojofoundation/alpine_glibc:3.4
+FROM cyberdojofoundation/alpine_glibc:edge
+MAINTAINER Jon Jagger <jon@jaggersoft.com>
+
 # Copied from frolvlad/alpine-mono
 
 RUN apk add --no-cache --virtual=.build-dependencies wget ca-certificates tar xz && \
@@ -7,4 +9,3 @@ RUN apk add --no-cache --virtual=.build-dependencies wget ca-certificates tar xz
     cert-sync /etc/ssl/certs/ca-certificates.crt && \
     apk del .build-dependencies && \
     rm /tmp/*
-

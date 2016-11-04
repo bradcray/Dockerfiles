@@ -1,4 +1,5 @@
-FROM alpine:3.4
+FROM cyberdojofoundation/alpine_language_base:edge
+MAINTAINER Jon Jagger <jon@jaggersoft.com>
 # Copied from frolvlad/alpine-glibc:alpine-3.4
 
 # Here we install GNU libc (aka glibc) and set C.UTF-8 locale as default.
