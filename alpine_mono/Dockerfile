@@ -1,4 +1,4 @@
-FROM cyberdojofoundation/alpine_glibc:edge
+FROM cyberdojofoundation/alpine_glibc:3.4
 MAINTAINER Jon Jagger <jon@jaggersoft.com>
 
 # Copied from frolvlad/alpine-mono
