@@ -6,5 +6,4 @@ COPY project.clj /tmp
 RUN cd /tmp \
  && lein deps \
  && lein midje --help \
- && chown -R nobody /.m2 \
- && rm project.clj
+ && chown -R nobody /.m2

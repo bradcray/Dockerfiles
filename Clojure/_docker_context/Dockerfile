@@ -1,15 +1,9 @@
-FROM java:8
+FROM clojure:lein-2.7.1-alpine
 MAINTAINER Frederic Merizen <frederic.merizen@soft-xki.com>
 
 ENV LEIN_ROOT=1
 COPY project.clj /tmp
-RUN wget \
-      -O /usr/bin/lein \
-      --no-check-certificate \
-      --no-cookies \
-      https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein \
- && chmod 755 /usr/bin/lein \
- && cd /tmp \
+RUN cd /tmp \
  && lein deps \
  && rm project.clj \
  && mv ~/.lein ~/.m2 / \
