@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker build -t cyberdojofoundation/groovy-2.4.4  .
+docker build -t cyberdojofoundation/groovy-2.4.7  .
