@@ -1,2 +1,2 @@
-FROM       cyberdojofoundation/gpp-5.3
+FROM       cyberdojofoundation/gpp-6.2
 MAINTAINER Jon Jagger <jon@jaggersoft.com>
