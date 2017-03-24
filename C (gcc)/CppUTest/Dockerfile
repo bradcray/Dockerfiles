@@ -13,3 +13,5 @@ RUN cd cpputest && make
 RUN cd cpputest && make check
 RUN chown -R www-data cpputest
 RUN chgrp -R www-data cpputest
+
+COPY red_amber_green.rb /usr/local/bin
