@@ -20,3 +20,5 @@ WORKDIR /
 RUN wget https://github.com/byran/Unity/archive/CyberDojo_Release_1.zip
 RUN unzip CyberDojo_Release_1.zip
 RUN mv Unity-CyberDojo_Release_1 unity
+
+COPY red_amber_green.rb /usr/local/bin
