@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker build -t cyberdojofoundation/clangpp_igloo .
+docker build --no-cache -t cyberdojofoundation/clangpp_igloo .
