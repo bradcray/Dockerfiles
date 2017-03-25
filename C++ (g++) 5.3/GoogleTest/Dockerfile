@@ -8,3 +8,5 @@ RUN apt-get update && apt-get install -y \
 RUN cd /usr/src/gtest && cmake .
 RUN cd /usr/src/gtest && make
 RUN cd /usr/src/gtest && mv libg* /usr/lib
+
+COPY red_amber_green.rb /usr/local/bin
