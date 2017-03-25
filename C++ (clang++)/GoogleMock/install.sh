@@ -8,7 +8,9 @@ cd /usr/src
 apt-get update
 apt-get install -y wget cmake unzip
 
-wget http://googlemock.googlecode.com/files/gmock-1.7.0.zip
+
+#WAS wget http://googlemock.googlecode.com/files/gmock-1.7.0.zip
+wget http://pkgs.fedoraproject.org/repo/pkgs/gmock/gmock-1.7.0.zip/073b984d8798ea1594f5e44d85b20d66/gmock-1.7.0.zip
 unzip gmock-1.7.0.zip
 
 cd /usr/src/gmock-1.7.0
