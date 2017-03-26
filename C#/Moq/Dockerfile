@@ -10,3 +10,5 @@ RUN  apk add --update openssl \
   && mv Moq.4.0.10827       /moq \
   && mv NUnit.2.6.2         /moq \
   && mv NUnit.Runners.2.6.1 /moq
+
+COPY red_amber_green.rb /usr/local/bin
