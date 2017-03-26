@@ -1,11 +1,7 @@
 FROM       cyberdojofoundation/csharp_nunit
 MAINTAINER Seb Rose <seb@claysnow.co.uk>
 
-RUN apt-get update && apt-get -y install \
-  wget \
-  unzip
-
-RUN wget https://github.com/downloads/techtalk/SpecFlow/SpecFlow_v1.9.0_bin.zip
+COPY SpecFlow_v1.9.0_bin.zip .
 RUN unzip SpecFlow_v1.9.0_bin.zip
 WORKDIR tools
 RUN gacutil -i Gherkin.dll -package SpecFlow
@@ -23,3 +19,4 @@ WORKDIR ..
 
 COPY /specflow.exe /specflow/
 
+COPY red_amber_green.rb /usr/local/bin
