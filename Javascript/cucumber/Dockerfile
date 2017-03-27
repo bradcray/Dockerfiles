@@ -1,4 +1,5 @@
-FROM       cyberdojofoundation/javascript-node-4.2.1
+# See readme.txt
+FROM       cyberdojofoundation/javascript-node_cucumber_original
 MAINTAINER Jon Jagger <jon@jaggersoft.com>
 
-RUN npm install -global cucumber@2.0.0-rc.6
+COPY red_amber_green.rb /usr/local/bin
