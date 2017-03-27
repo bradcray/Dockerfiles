@@ -5,3 +5,5 @@ RUN apt-get update && apt-get install -y \
   python-pip
 
 RUN pip install -U pytest
+
+COPY red_amber_green.rb /usr/local/bin
