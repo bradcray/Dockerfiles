@@ -1,7 +1,5 @@
-FROM       cyberdojofoundation/fsharp-3.0
+# See readme.txt
+FROM       cyberdojofoundation/fsharp_nunit_original
 MAINTAINER Jon Jagger <jon@jaggersoft.com>
 
-RUN mono nuget.exe install NUnit.Runners -o Packages -ExcludeVersion
-
-RUN gacutil -i /Packages/NUnit.Runners/tools/nunit.framework.dll -package nunit
-
+COPY red_amber_green.rb /usr/local/bin
