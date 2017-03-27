@@ -15,3 +15,14 @@ $ ./cyber-dojo start-point create ... --git=https://github.com/cyber-dojo/start-
 ```
 
 command from a cyber-dojo server.
+
+- - - -
+
+Once all the docker images have a working embedded red_amber_green.rb
+file I plan to start splitting up this repo.
+Each language+testFramework will
+- have a dedicated repo which will
+combine the two parts currently split between this repo and the
+[start-points-languages](https://github.com/cyber-dojo/start-points-languages) repo.
+- have a .travis.yml file which will build the image and push it to dockerhub
+
