@@ -1,5 +1,5 @@
-FROM       cyberdojofoundation/javascript-node-4.2.1
+# See readme.txt
+FROM       cyberdojofoundation/javascript-node_jasmine_original
 MAINTAINER Jon Jagger <jon@jaggersoft.com>
 
-RUN npm install -g jasmine
-
+COPY red_amber_green.rb /usr/local/bin
