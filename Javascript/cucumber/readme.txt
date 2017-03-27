@@ -12,3 +12,10 @@ Push to dockerhub
 $ docker push cyberdojofoundation/javascript-node_cucumber_original
 
 Update the Dockerfile to build FROM cyberdojofoundation/javascript-node_cucumber_original
+and COPY in red_amber_green.rb
+
+Rebuild the image
+$ ./build-docker-image.sh
+
+Push new version of image
+$ docker push cyberdojofoundation/javascript-node_cucumber

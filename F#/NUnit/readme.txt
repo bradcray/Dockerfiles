@@ -12,4 +12,10 @@ Push to dockerhub
 $ docker push cyberdojofoundation/fsharp_nunit_original
 
 Update the Dockerfile to build FROM cyberdojofoundation/fsharp_nunit_original
+and COPY in red_amber_green.rb
 
+Rebuild the image
+$ ./build-docker-image.sh
+
+Push new version of image
+$ docker push cyberdojofoundation/fsharp_nunit
