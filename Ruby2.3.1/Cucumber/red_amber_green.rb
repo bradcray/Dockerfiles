@@ -6,4 +6,4 @@ lambda { |stdout,stderr,status|
   return :red   if /(\d+) scenario(s?) \((\d+) failed/.match(output)
   return :green if /(\d+) scenario(s?) \((\d+) passed/.match(output)
   return :amber
-}"
+}
